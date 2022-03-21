@@ -82,6 +82,21 @@ body { font-family: 'cloudbold'; }
 
 .main-nav a {
   color: black;
+  font-size: 22px;
+}
+
+.main-nav a:hover {
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: grey;}
+    to {color: black;}
 }
 
 .full-space {
