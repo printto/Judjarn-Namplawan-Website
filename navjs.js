@@ -1,6 +1,6 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  $('#loadnav').html(`<nav class="navbar navbar-expand-lg main-nav">
+$('#loadnav').html(`<nav class="navbar navbar-expand-lg main-nav">
     <img id="nav-image" src="img/HOMEPAGE/HOME PAGE WOOD reduced.png" />
     <span></span>
     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid grey;">
@@ -17,18 +17,15 @@ $(document).ready(function() {
   </nav>
 `);
 
-  var current_title = $(document).attr('title');
-  if(current_title.includes("Home")){
-    $(".pnav-home").addClass("active");
-  }
-  else if(current_title.includes("Downloads")){
-    $(".pnav-download").addClass("active");
-  }
-  else if(current_title.includes("Tutorials")){
-    $(".pnav-tutorial").addClass("active");
-  }
-  else if(current_title.includes("Translate")){
-    $(".pnav-translate").addClass("active");
-  }
+var current_title = $(document).attr('title');
+if (current_title.includes("Home")) {
+  $(".pnav-home").addClass("active");
+} else if (current_title.includes("Downloads")) {
+  $(".pnav-download").addClass("active");
+} else if (current_title.includes("Tutorials")) {
+  $(".pnav-tutorial").addClass("active");
+} else if (current_title.includes("Translate")) {
+  $(".pnav-translate").addClass("active");
+}
 
-});
+// });
